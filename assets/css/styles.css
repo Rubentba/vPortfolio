@@ -1,0 +1,879 @@
+/*------------------------------------------------
+*	Template name: Gentleman
+*	Version      : 3.2
+*	Author       : FlaTheme
+*	Author URL   : http://themeforest.net/user/flatheme
+*
+*	Table of contents:
+*	1. 	Body/Main
+*	2. 	Toggle Menu
+*	3.	Home Section
+*	4.	Education/Experience Section
+*	5.	Skills
+*	6.	Hire me
+*	7.	Portfolio Section
+*	8.	Services Section
+*	9.	Facts
+*	10.	Testimonial Section
+*	11.	Clients
+*	12.	Contact Section
+*	13.	Footer
+*
+-------------------------------------------------*/
+
+/*-------------------------------------------------
+	1. Body/Main
+-------------------------------------------------*/
+html, body {
+ 	height: 100%;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	color: rgb(70, 70, 70);
+	font: 300 13px 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 15px;
+	color: rgb(20, 20, 20);
+}
+.heading-uppercase {
+	margin-bottom: 10px;
+	font: 600 13px 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:focus, 
+input:focus, 
+textarea:focus, 
+button:focus {
+	outline: none;
+}
+
+p,
+ul,
+li,
+.row,
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	line-height: 23px;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+li {
+	list-style-type: none;
+}
+
+.section-padding {
+	padding: 80px 50px;
+}
+
+.bg-overlay-black, 
+.bg-overlay-white {
+	width: 100%;
+	height: 100%;
+}
+.bg-overlay-black {
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+}
+.bg-overlay-white {
+	background: rgba(255, 255, 255, 0.9);
+}
+.bg-overlay-black h1, 
+.bg-overlay-black h2, 
+.bg-overlay-black h3, 
+.bg-overlay-black h4, 
+.bg-overlay-black h5, 
+.bg-overlay-black h6 {
+	color: #fff;
+}
+
+/* Section Title style */
+.section-title {
+	position: relative;
+	margin: 0 0 45px;
+	font: 600 20px 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.section-title::before {
+	position: absolute;
+	content: '';
+	right: 0;
+	bottom: -5px;
+	left: 0;
+	background: rgb(20, 20, 20);
+	height: 1px;
+}
+
+/* Owl Dots Style */
+.owl-dots {
+	margin-top: 20px;
+}
+
+.owl-dot {
+	position: relative;
+	display: inline-block;
+	background: transparent;
+	width: 7px;
+	height: 7px;
+	border: 1px solid rgb(20, 20, 20);
+	border-radius: 50%;
+	margin: 0 16px 0 0;
+}
+.owl-dot:last-child {
+	margin-right: 0;
+}
+.owl-dot:hover,
+.owl-dot:focus,  
+.owl-dot.active {
+	background: rgb(20, 20, 20);
+}
+
+/* Button style */
+.btn-style {
+	display: inline-block;
+	background: rgb(20, 20, 20);
+	padding: 18px 36px;
+	color: #fff;
+	font: 600 12px 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	-webkit-transition: linear 0.1s;
+	transition: linear 0.1s;
+}
+.btn-style:hover, 
+.btn-style:focus {
+	background: rgb(50, 50, 50);
+	color: #fff;
+}
+
+/* Margins */
+.margin-top-50 {
+	margin-top: 50px;
+}
+.margin-top-40 {
+	margin-top: 40px;
+}
+.margin-top-30 {
+	margin-top: 30px;
+}
+.margin-top-20 {
+	margin-top: 20px;
+}
+.margin-top-10 {
+	margin-top: 10px;
+}
+.margin-bottom-50 {
+	margin-bottom: 50px;
+}
+.margin-bottom-40 {
+	margin-bottom: 40px;
+}
+.margin-bottom-30 {
+	margin-bottom: 30px;
+}
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+.no-margin {
+	margin: 0;
+}
+
+/*-------------------------------------------------
+	2. Toggle Menu
+-------------------------------------------------*/
+.toggle-btn {
+	position: fixed;
+	z-index: 999;
+	top: 0px;
+	right: 0px;
+	background: #fff;
+	width: 60px;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	-webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,0.15);
+	border: none;
+	line-height: 60px;
+	cursor: pointer;
+	-webkit-transition: linear 0.2s;
+	transition: linear 0.2s;
+}
+
+.lines {
+	position: relative;
+	display: inline-block;
+	background: rgb(20, 20, 20);
+	width: 20px;
+	height: 2px;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.lines::before,
+.lines::after {
+	position: absolute;
+	content: '';
+	left: 0;
+	display: inline-block;
+	background: rgb(20, 20, 20);
+	width: 20px;
+	height: 2px;
+	-webkit-transition: linear 0.2s;
+	transition: linear 0.2s;
+}
+.lines::before {
+	top: 5px;
+}
+.lines::after {
+	top: -5px;
+}
+
+.toggle-close {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.toggle-close, 
+.toggle-close .lines {
+	background: transparent;
+}
+
+.toggle-close .lines::before, 
+.toggle-close .lines::after {
+	top: 0;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+.toggle-close .lines::before {
+	-webkit-transform: rotate3d(0, 0, 1, 45deg);
+	transform: rotate3d(0, 0, 1, 45deg);
+}
+.toggle-close .lines::after {
+	-webkit-transform: rotate3d(0, 0, 1, -45deg);
+	transform: rotate3d(0, 0, 1, -45deg);
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 998;
+	background: #fff;
+	width: 100%;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+.show-menu {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.nav {
+	display: block;
+	text-align: center;
+}
+
+.nav .nav-item {
+	line-height: 20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.nav .nav-item .nav-link {
+	position: relative;
+	padding: 0;
+	color: rgb(20, 20, 20);
+}
+.nav .nav-item .nav-link:hover, 
+.nav .nav-item .nav-link:focus {
+	background: transparent;
+	text-decoration: none;
+}
+
+/*-------------------------------------------------
+	3. Home Section
+-------------------------------------------------*/
+.fill {
+	min-height: 100%;
+	height: 100%;
+}
+
+.home-background {
+	position: relative;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.home-background .container, 
+.home-background .container-fluid {
+	position: relative;
+	height: 100%;
+}
+
+.home-content {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translate(0,-50%);
+	transform: translate(0,-50%);
+}
+
+.home-background img {
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 5px 20px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,0.2);
+}
+
+.home-background p {
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+/* Social buttons */
+.social {
+	position: absolute;
+	right: 20px;
+	bottom: 50px;
+	left: 20px;
+}
+
+.social li {
+	display: inline-block;
+	padding-right: 10px;
+}
+.social li:last-child {
+	padding: 0;
+}
+
+.social a {
+	position: relative;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
+	text-align: center;
+	-webkit-transition: linear 0.2s;
+	transition: linear 0.2s;
+}
+.social a:last-child {
+	margin: 0;
+}
+.social a:hover {
+	color: #fff;
+}
+
+.social i {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+/*-------------------------------------------------
+	4. Education/Experience Section
+-------------------------------------------------*/
+.resume-box {
+	margin-bottom: 30px;
+	padding: 0;
+}
+.resume-box:last-child {
+	margin-bottom: 0;
+}
+
+.resume-box .year span {
+	color: rgb(180, 180, 180);
+	font-weight: 400;
+	font-style: italic;
+}
+
+/*-------------------------------------------------
+	5. Skills
+-------------------------------------------------*/
+.skills-background {
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+	padding: 0;
+	text-align: center;
+}
+
+.skills-background .row {
+	padding: 0 15px;
+}
+
+.skill-bar input[type="text"] {
+	font: 300 20px "Open Sans", sans-serif;
+	letter-spacing: 1px;
+}
+
+/*-------------------------------------------------
+	6. Hire me
+-------------------------------------------------*/
+.hire-background {
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+	text-align: center;
+	padding: 0;
+}
+
+/*-------------------------------------------------
+	7. Portfolio Section
+-------------------------------------------------*/
+.portfolio-content {
+	position: relative;
+	padding: 0;
+}
+
+.image-layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: ease-out 0.3s;
+	transition: ease-out 0.3s;
+}
+
+.image-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-align: center;
+	-webkit-transition: ease-out 0.3s;
+	transition: ease-out 0.3s;
+}
+
+.image-title h1, 
+.image-title h2, 
+.image-title h3, 
+.image-title h4, 
+.image-title h5, 
+.image-title h6, 
+.image-title div {
+	transform: translateY(4px);
+	opacity: 0;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+
+.image-title h1, 
+.image-title h2, 
+.image-title h3, 
+.image-title h4, 
+.image-title h5, 
+.image-title h6 {
+	color: #fff;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.image-title div {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.image-title a {
+	position: relative;
+	display: inline-block;
+	padding: 1px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+.image-title a:hover {
+	color: #fff;
+}
+
+.portfolio-content:hover .image-layer, 
+.portfolio-content:focus .image-layer {
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-content:hover .image-title h1, 
+.portfolio-content:hover .image-title h2, 
+.portfolio-content:hover .image-title h3, 
+.portfolio-content:hover .image-title h4, 
+.portfolio-content:hover .image-title h5, 
+.portfolio-content:hover .image-title h6, 
+.portfolio-content:hover .image-title div {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+/* Owl Carousel dots style */
+.portfolio-content .owl-dots {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	-webkit-transform: translate(-50%,0);
+	transform: translate(-50%,0);
+	margin: 0;
+}
+
+.portfolio-content .owl-dot {
+	border-color: #fff;
+}
+
+.portfolio-content .owl-dot:hover,
+.portfolio-content .owl-dot:focus,  
+.portfolio-content .owl-dot.active {
+	background: #fff;
+}
+
+/* Magnific Popup box style */
+.mfp-container,
+.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+.mfp-container {
+	padding: 0 20px;
+}
+
+.mfp-ready .mfp-container {
+	opacity: 1;
+}
+.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+
+.mfp-removing .mfp-container,
+.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+.popup-box {
+	position: relative;
+	background: #fff;
+	width: auto;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.popup-content {
+ 	padding: 30px;
+}
+
+/* Close button styles */
+button.mfp-close {
+	display: block;
+	top: -44px;
+	opacity: 1;
+	width: auto;
+	height: auto;
+	line-height: auto;
+	font-size: 24px;
+	-webkit-transition: linear 0.1s;
+	transition: linear 0.1s;
+}
+.mfp-close-btn-in .mfp-close {
+	color: rgba(255, 255, 255, 0.7);
+}
+button.mfp-close:hover {
+	top: -44px;
+	opacity: 1;
+	color: #fff;
+}
+
+/*-------------------------------------------------
+	8. Services Section
+-------------------------------------------------*/
+.service-box {
+	position: relative;
+	padding-left: 70px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+.service-box:last-child {
+	margin: 0;
+}
+
+.service-box div:first-child {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	border: 1px solid rgb(220, 220, 220);
+	text-align: center;
+	border-radius: 50%;
+}
+
+.service-box i {
+	color: rgb(20, 20, 20);
+	font-size: 18px;
+	line-height: 50px;
+}
+
+/*-------------------------------------------------
+	9. Facts
+-------------------------------------------------*/
+.facts-background {
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+	text-align: center;
+	padding: 0;
+}
+
+.facts-background .row {
+	padding: 0 15px;
+}
+
+.fact-box {
+	padding: 10px 15px;
+	border-right: 1px solid #fff;
+}
+.fact-box:last-child {
+	border: none;
+}
+
+.fact-box p {
+	font-size: 24px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.fact-box h1, 
+.fact-box h2, 
+.fact-box h3, 
+.fact-box h4, 
+.fact-box h5, 
+.fact-box h6 {
+	margin: 15px 0 0;
+}
+
+/*-------------------------------------------------
+	10. Testimonial Section
+-------------------------------------------------*/
+.testimonial-box {
+	margin-bottom: 20px;
+}
+.testimonial-box:last-child {
+	margin: 0;
+}
+
+.testimonial-box img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.testimonial-box p {
+	position: relative;
+}
+.testimonial-box p::after {
+	position: absolute;
+	content: "\f10e";
+	right: 0;
+	bottom: 0;
+	color: rgb(220, 220, 220);
+	font-family: "FontAwesome";
+	font-size: 13px;
+	line-height: 13px;
+}
+
+.testimonial-box h1, 
+.testimonial-box h2, 
+.testimonial-box h3, 
+.testimonial-box h4, 
+.testimonial-box h5, 
+.testimonial-box h6 {
+	margin: 10px 0 0;
+}
+
+/*-------------------------------------------------
+	11. Clients
+-------------------------------------------------*/
+.clients-background {
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+	text-align: center;
+	padding: 0;
+}
+
+.clients-background .bg-overlay-black, 
+.clients-background .bg-overlay-white {
+	padding: 0 50px;
+}
+
+.client-box {
+	display: inline-block;
+}
+
+.client-box img {
+	width: auto;
+	max-width: 150px;
+}
+
+.clients-background .owl-theme .owl-controls .owl-buttons div, 
+.clients-background .owl-theme .owl-controls .owl-page span {
+	background: rgb(20, 20, 20);
+}
+
+/*-------------------------------------------------
+	12. Contact Section
+-------------------------------------------------*/
+.info {
+	padding: 0 0 30px;
+}
+
+.info li {
+	position: relative;
+	height: 36px;
+	margin-bottom: 10px;
+	padding-left: 46px;
+	line-height: 36px;
+	font-weight: 400;
+}
+
+.info i {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	border: 1px solid rgb(220, 220, 220);
+	color: rgb(20, 20, 20);
+	font-size: 13px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+input,
+textarea {
+	background: rgb(240, 240, 240);
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 15px 20px;
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid rgb(240, 240, 240);
+	border-left: none;
+	-webkit-transition: ease-out 0.2s;
+	transition: ease-out 0.2s;
+}
+textarea {
+ 	height: 150px;
+}
+
+.contact-form button {
+	border: none;
+	cursor: pointer;
+}
+
+.submit-result {
+ 	width: 100%;
+}
+
+#success {
+	display: none;
+	padding-top: 20px;
+	color: #419873;
+}
+
+#error {
+	display: none;
+	padding-top: 20px;
+	color: red;
+}
+
+/* Google Maps */
+.google-maps {
+	padding: 0;
+}
+
+/*-------------------------------------------------
+	13. Footer
+-------------------------------------------------*/
+.footer-background {
+	background: rgb(20, 20, 20);
+	padding: 50px;
+	color: #fff;
+}
+
+.footer-background a {
+	color: #fff;
+}
+
+.footer-left {
+	padding: 0;
+	text-align: left;
+}
+.footer-left i {
+	padding: 3px;
+}
+
+.footer-right {
+	padding: 0;
+	text-align: right;
+}
+.footer-right i {
+	line-height: 30px;
+	font-size: 16px;
+}
+.footer-right a {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
+	text-align: center;
+	-webkit-transition: linear 0.2s;
+	transition: linear 0.2s;
+}
+.footer-right a:last-child {
+	margin: 0;
+}
+.footer-right a:hover {
+	color: #fff;
+}

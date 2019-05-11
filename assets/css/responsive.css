@@ -1,0 +1,306 @@
+/*------------------------------------------------
+*
+*	Table of contents: 
+*	1. Screen resolution 768px+
+*	2. Screen resolution 992px+
+*	3. Screen resolution 1200px+
+*	4. Screen resolution less than 992px
+*	5. Screen resolution less than 768px
+*	6. Screen resolution less than 576px
+*
+-------------------------------------------------*/
+/*-------------------------------------------------
+  1. Screen resolution 768px+
+-------------------------------------------------*/
+@media (min-width: 768px) {
+	.menu {
+		height: 60px;
+	}
+	.nav .nav-item {
+		display: inline-block;
+		margin: 0 10px;
+		padding: 20px 0;
+	}
+	.resume-box {
+		position: relative;
+		padding-left: 170px;
+	}
+	.year {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 145px;
+		height: 100%;
+		padding: 0 20px;
+		border-right: 1px solid rgb(220, 220, 220);
+		text-align: center;
+	}
+	.year div {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translate(0,-50%);
+		transform: translate(0,-50%);
+	}
+	.testimonial-box {
+		position: relative;
+		min-height: 80px;
+		padding-left: 100px;
+	}
+	.testimonial-box img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.footer-left p {
+		line-height: 30px;
+	}
+}
+
+/*-------------------------------------------------
+  2. Screen resolution 992px+
+-------------------------------------------------*/
+@media (min-width: 992px) {
+	.skills-background, 
+	.hire-background, 
+	.facts-background, 
+	.clients-background {
+		position: relative;
+	}
+	.bg-overlay-black, 
+	.bg-overlay-white, 
+	#map-canvas {
+		position: absolute;
+	}
+	.show-menu {
+		-webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.15);
+		box-shadow: 0 2px 10px 0 rgba(0,0,0,0.15);
+	}
+	.nav .nav-item .nav-link::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 0;
+		padding: 10px 0;
+		border-bottom: 1px solid rgb(30, 30, 30);
+		-webkit-transition: ease-out 0.2s;
+		transition: ease-out 0.2s;
+	}
+	.nav .nav-item.active .nav-link::before, 
+	.nav .nav-item .nav-link.active::before, 
+	.nav .nav-item .nav-link:hover::before {
+		width: 100%;
+	}
+	.social a::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 0;
+		padding: 15px 0;
+		border-bottom: 1px solid #fff;
+		-webkit-transition: ease-out 0.2s;
+		transition: ease-out 0.2s;
+	}
+	.social a:hover::before {
+		width: 100%;
+	}
+	.middle-content {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translate(0,-50%);
+		transform: translate(0,-50%);
+	}
+	.image-title a::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 0;
+		padding: 10px 0;
+		border-bottom: 1px solid #fff;
+		-webkit-transition: ease-out 0.2s;
+		transition: ease-out 0.2s;
+	}
+	.image-title a:hover::before {
+		width: 100%;
+	}
+	.skills-background .row, 
+	.facts-background .row {
+		padding: 0 45px;
+	}
+	#map-canvas {
+		width: 100%;
+		height: 100%;
+	}
+	.footer-right a::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 0;
+		padding: 15px 0;
+		border-bottom: 1px solid #fff;
+		-webkit-transition: ease-out 0.2s;
+		transition: ease-out 0.2s;
+	}
+	.footer-right a:hover::before {
+		width: 100%;
+	}
+}
+
+/*-------------------------------------------------
+  3. Screen resolution 1200px+
+-------------------------------------------------*/
+@media (min-width: 1200px) {
+	.info li {
+		display: inline-block;
+		margin-right: 20px;
+	}
+	.info li:last-child {
+		margin-right: 0;
+	}
+}
+
+/*-------------------------------------------------
+  4. Screen resolution less than 992px
+-------------------------------------------------*/
+@media (max-width: 992px) {
+	.nav .nav-item .nav-link {
+		border-bottom: 1px solid transparent;
+		-webkit-transition: linear 0.2s;
+		transition: linear 0.2s;
+	}
+	.nav .nav-item.active .nav-link, 
+	.nav .nav-item .nav-link.active, 
+	.nav .nav-item .nav-link:hover {
+		border-color: rgb(30, 30, 30);
+	}
+	.home-background, 
+	.skills-background, 
+	.hire-background, 
+	.facts-background, 
+	.clients-background {
+		background-attachment: scroll;
+		background-position: top center !important;
+	}
+	.bg-overlay-white, 
+	.bg-overlay-black {
+		padding: 80px 30px;
+	}
+	.social {
+		bottom: -30px;
+	}
+	.social a:hover, 
+	.image-title a:hover, 
+	.footer-right a:hover {
+		border-color: #fff;
+	}
+	.clients-background .bg-overlay-white {
+		padding: 80px 50px;
+	}
+	#map-canvas {
+		position: relative;
+		width: 100%;
+		height: 300px;
+	}
+}
+
+/*-------------------------------------------------
+  5. Screen resolution less than 768px
+-------------------------------------------------*/
+@media (max-width: 768px) {
+	.section-padding {
+		padding: 80px 30px;
+	}
+	.menu {
+		height: 100%;
+		-webkit-transition: ease-out 0.3s;
+		transition: ease-out 0.3s;
+	}
+	.nav {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translate(0,-50%);
+		transform: translate(0,-50%);
+	}
+	.nav .nav-item {
+		display: table;
+		margin: 0 auto 15px auto;
+	}
+	.nav .nav-item:last-child {
+		margin-bottom: 0;
+	}
+	.home-background img {
+		width: 200px;
+		height: 200px;
+	}
+	.year {
+		margin-bottom: 15px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid rgb(220, 220, 220);
+		text-align: left;
+	}
+	.year h1, 
+	.year h2, 
+	.year h3, 
+	.year h4, 
+	.year h5, 
+	.year h6, 
+	.resume-box .year span {
+		display: inline-block;
+	}
+	.resume-box .year span::before {
+		content: "@";
+		padding: 0 2px 0 3px;
+		font-size: 13px;
+	}
+	.portfolio-content .owl-dots {
+		bottom: 30px;
+	}
+	.mfp-container {
+		padding: 0 30px;
+	}
+	.testimonial-box {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.testimonial-box img {
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+	.testimonial-box p {
+		padding: 0 15px;
+	}
+	.testimonial-box p::before {
+		position: absolute;
+		content: "\f10d";
+		top: 0;
+		left: 0;
+		color: rgb(220, 220, 220);
+		font-family: "FontAwesome";
+	 	font-size: 13px;
+	}
+	.clients-background .bg-overlay-white {
+		padding: 80px 30px;
+	}
+	.footer-background {
+		padding: 50px 30px;
+	}
+	.footer-right {
+		margin-top: 20px;
+	}
+}
+
+/*-------------------------------------------------
+  6. Screen resolution less than 576px
+-------------------------------------------------*/
+@media (max-width: 576px) {
+	.skill-bar {
+		margin: 0 0 30px;
+	}
+	.fact-box {
+		padding: 15px 0;
+		border: none;
+	}
+}
