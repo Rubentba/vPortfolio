@@ -568,6 +568,7 @@ li {
 .mfp-bg {
 	opacity: 0;
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	-webkit-transition: ease-out 0.2s;
 	transition: ease-out 0.2s;
 }
