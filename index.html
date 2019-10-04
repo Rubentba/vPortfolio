@@ -24,6 +24,7 @@
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Google Font -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- Preloader -->
@@ -90,62 +91,63 @@
     </section>
     <!-- end Home -->
 
-        <!-- Portfolio -->
-        <section id="portfolio">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12 col-lg-6 section-padding">
-                <h2 class="section-title">Skills</h2><!-- Section Title -->
-                <p>To the right lie three projects I have worked on that I believe demonstrate what I am capable of as a Web Developer.</p><br>
+    <!-- Portfolio -->
+    <section id="portfolio" data-aos="fade-right">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 section-padding">
+            <h2 class="section-title">Skills</h2><!-- Section Title -->
+            <p>Front End: HTML, CSS, Bootstrap, Materialize CSS, Material UI, Javascript, Jquery, ES6+, React, Redux.</p><br>
+            <p>Back End: Node.js, Firebase,  MongoDB, MySQL, Sequelize,  Mongoose.</p><br>
+          </div>
+          <div class="col-12 col-lg-6 portfolio-content">
+            <div id="portfolioSlider" class="owl-carousel">
+              <!-- 1 -->
+              <div>
+                <img src="assets/images/stockpholio-screenshot.JPG" alt="Stockpholio" style="height:474px; width:100%;"><!-- image source -->
+                <div class="image-layer">
+                  <div class="image-title">
+                  <a href="https://stockpholio.herokuapp.com/"><h5>Stockpholio</h5></a>
+                    <div>
+                      <a href="https://github.com/Rubentba/stockPholio">Github Repo</a><!-- link to popup content -->
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-12 col-lg-6 portfolio-content">
-                <div id="portfolioSlider" class="owl-carousel">
-                  <!-- 1 -->
-                  <div>
-                    <img src="assets/images/stockpholio-screenshot.JPG" alt="Stockpholio" style="height:474px; width:100%;"><!-- image source -->
-                    <div class="image-layer">
-                      <div class="image-title">
-                      <a href="https://stockpholio.herokuapp.com/"><h5>Stockpholio</h5></a>
-                        <div>
-                          <a href="https://github.com/Rubentba/stockPholio">Github Repo</a><!-- link to popup content -->
-                        </div>
-                      </div>
+              <!-- 2 -->
+              <div>
+                <img src="assets/images/Train-Schedule-Screenshot.JPG" alt="Train Scheduler" style="height:474px; width:100%"><!-- image source -->
+                <div class="image-layer">
+                  <div class="image-title">
+                  <a href="https://rubentba.github.io/trainScheduler/"><h5>Train Scheduler</h5></a>
+                    <div>
+                        <a href="https://rubentba.github.io/trainScheduler/">Github Repo</a><!-- link to popup content -->
                     </div>
                   </div>
-                  <!-- 2 -->
-                  <div>
-                    <img src="assets/images/Train-Schedule-Screenshot.JPG" alt="Train Scheduler" style="height:474px; width:100%"><!-- image source -->
-                    <div class="image-layer">
-                      <div class="image-title">
-                      <a href="https://rubentba.github.io/trainScheduler/"><h5>Train Scheduler</h5></a>
-                        <div>
-                            <a href="https://rubentba.github.io/trainScheduler/">Github Repo</a><!-- link to popup content -->
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div>
+                <img src="assets/images/Trivia-Game-Screenshot.JPG" alt="Trivia Game" style="min-height:474px; width:100%"><!-- image source -->
+                <div class="image-layer">
+                  <div class="image-title">
+                  <a href="https://rubentba.github.io/TriviaGame/"><h5>Trivia Game</h5></a>
+                    <div>
+                        <a href="https://rubentba.github.io/TriviaGame/">Github Repo</a><!-- link to popup content -->
                     </div>
                   </div>
-                  <!-- 3 -->
-                  <div>
-                    <img src="assets/images/Trivia-Game-Screenshot.JPG" alt="Trivia Game" style="min-height:474px; width:100%"><!-- image source -->
-                    <div class="image-layer">
-                      <div class="image-title">
-                      <a href="https://rubentba.github.io/TriviaGame/"><h5>Trivia Game</h5></a>
-                        <div>
-                            <a href="https://rubentba.github.io/TriviaGame/">Github Repo</a><!-- link to popup content -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end 3 -->
-                </div><!-- end owl-carousel -->
-              </div><!-- end portfolio-content -->
-            </div><!-- end row -->
-          </div><!-- end container -->
-        </section>
-        <!-- end Portfolio -->
+                </div>
+              </div>
+              <!-- end 3 -->
+            </div><!-- end owl-carousel -->
+          </div><!-- end portfolio-content -->
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </section>
+    <!-- end Portfolio -->
 
     <!-- Experience -->
-    <section id="experience">
+    <section id="experience" data-aos="fade-right">
       <div class="container-fluid">
         <div class="row" style="min-height:474px;">
           <div class="col-12 col-lg-6 order-lg-2 section-padding">
@@ -186,52 +188,52 @@
     </section>
     <!-- end Experience -->
 
-        <!-- Education -->
-        <section id="education">
-          <div class="container-fluid">
-            <div class="row" style="min-height:474px;">
-              <div class="col-12 col-lg-6 section-padding">
-                <h2 class="section-title">Education</h2><!-- Section Title -->
-                <!-- Education box 1 -->
-                <div class="resume-box">
-                  <div class="year">
-                    <div>
-                      <h6 class="heading-uppercase">2019</h4>
-                      <span>Certificate of Completion</span>
-                    </div>
-                  </div>
-                  <h6 class="heading-uppercase">University of Central Florida Coding Bootcamp</h4>
-                  <p>Completed and acquired certificate of Completion at the University of Central Florida sponsored Coding Bootcamp.</p>
-                </div>
-                <!-- end Education box 1 -->
-                <!-- Education box 2 -->
-                <div class="resume-box">
-                  <div class="year">
-                    <div>
-                      <h6 class="heading-uppercase">2016-</h4>
-                      <span>Bachelors Degree</span>
-                    </div>
-                  </div>
-                  <h6 class="heading-uppercase">University of Central Florida</h4>
-                  <p>Pursuit of a Bachelors Degree in Computer Science.</p>
-                </div>
-                <!-- end Education box 2 -->
-              </div>
-              <!-- Skills -->
-              <div class="col-12 col-lg-6 skills-background" style="background-image: url(assets/images/greyBackground.jpg); min-height:474px;">
-                <div class="bg-overlay-black">
-                  <div class="middle-content">
-                  </div>
+    <!-- Education -->
+    <section id="education" data-aos="fade-right">
+      <div class="container-fluid">
+        <div class="row" style="min-height:474px;">
+          <div class="col-12 col-lg-6 section-padding">
+            <h2 class="section-title">Education</h2><!-- Section Title -->
+            <!-- Education box 1 -->
+            <div class="resume-box">
+              <div class="year">
+                <div>
+                  <h6 class="heading-uppercase">2019</h4>
+                  <span>Certificate of Completion</span>
                 </div>
               </div>
-              <!-- end Skills -->
-            </div><!-- end row -->
-          </div><!-- end container -->
-        </section>
-        <!-- end Education -->
+              <h6 class="heading-uppercase">University of Central Florida Coding Bootcamp</h4>
+              <p>Completed and acquired certificate of Completion at the University of Central Florida sponsored Coding Bootcamp.</p>
+            </div>
+            <!-- end Education box 1 -->
+            <!-- Education box 2 -->
+            <div class="resume-box">
+              <div class="year">
+                <div>
+                  <h6 class="heading-uppercase">2016-</h4>
+                  <span>Bachelors Degree</span>
+                </div>
+              </div>
+              <h6 class="heading-uppercase">University of Central Florida</h4>
+              <p>Pursuit of a Bachelors Degree in Computer Science.</p>
+            </div>
+            <!-- end Education box 2 -->
+          </div>
+          <!-- Skills -->
+          <div class="col-12 col-lg-6 skills-background" style="background-image: url(assets/images/greyBackground.jpg); min-height:474px;">
+            <div class="bg-overlay-black">
+              <div class="middle-content">
+              </div>
+            </div>
+          </div>
+          <!-- end Skills -->
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </section>
+    <!-- end Education -->
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" data-aos="fade-right">
       <div class="container-fluid">
         <div class="row" style="min-height:474px;">
           <div class="col-12 col-lg-6 order-lg-2 section-padding">
@@ -309,5 +311,13 @@
     <script src="assets/js/theme-plugins.min.js"></script>
     <!-- Template Functions -->
     <script src="assets/js/scripts.js"></script>
+    <!-- AOS Plgin -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 250,
+        duration: 1000
+      });
+    </script>
   </body>
 </html>
